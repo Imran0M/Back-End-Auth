@@ -54,7 +54,7 @@ app.post('/user/login', async (req, res) => {
 
     const token = jwt.sign({ username, role: "Students" }, process.env.private_key, { expiresIn: '1h' })
     try {
-        res.json(token)
+        res.json({token: token})
     } catch (error) {
         res.json({ message: "An error occured in Login" })
     }
