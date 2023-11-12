@@ -61,6 +61,6 @@ app.post('/user/login', async (req, res) => {
 })
 //get method
 
-app.get('/sample', (req,res)=>{
-    comsole.log('Hello from get')
-})
+app.get('/', (req, res) => {
+    res.send('Hello World!');
+});
