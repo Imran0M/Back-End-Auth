@@ -59,4 +59,8 @@ app.post('/user/login', async (req, res) => {
         res.json({ message: "An error occured in Login" })
     }
 })
+//get method
 
+app.get('/sample', (req,res)=>{
+    comsole.log('Hello from get')
+})
